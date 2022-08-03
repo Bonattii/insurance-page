@@ -360,7 +360,7 @@ body.menu-expanded button.open-menu {
 /* ====================== PARTNERS ================== */
 
 #partners {
-  background-color: var(--brand-beige);
+  background-color: var(--brand-light);
 }
 
 #partners header h2 {
@@ -396,4 +396,19 @@ body.menu-expanded button.open-menu {
 
 #partners .card .col-b h3 {
   margin-block: 1rem;
+}
+
+/* ====================== ABOUT ================== */
+
+#about {
+  text-align: left;
+}
+
+#about header h2 {
+  margin-bottom: 2.4rem;
+}
+
+#about .content p {
+  margin-top: 2.4rem;
+  margin-bottom: 6rem;
 }
