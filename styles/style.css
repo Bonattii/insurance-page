@@ -350,9 +350,50 @@ body.menu-expanded button.open-menu {
   background: #ffffff;
 
   border: 1px solid var(--brand-light);
-  border-radius: 0.6rem;
+  border-radius: 1rem;
 }
 
 #insurances .card h3 {
   margin-block: 1.6rem;
+}
+
+/* ====================== PARTNERS ================== */
+
+#partners {
+  background-color: var(--brand-beige);
+}
+
+#partners header h2 {
+  margin-bottom: 6rem;
+}
+
+#partners .cards {
+  display: flex;
+  gap: 3.2rem;
+  flex-direction: column;
+}
+
+#partners .card {
+  display: flex;
+  gap: 5rem;
+  align-items: flex-start;
+  text-align: left;
+
+  padding: 2.4rem;
+  background: #ffffff;
+
+  border: 1px solid var(--brand-light);
+  border-radius: 1rem;
+}
+
+#partners .card .col-a {
+  flex-shrink: 0;
+}
+
+#partners .card .col-b {
+  align-self: center;
+}
+
+#partners .card .col-b h3 {
+  margin-block: 1rem;
 }
