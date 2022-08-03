@@ -11,8 +11,8 @@
 
   --hue: 34;
   --primary-color: hsl(var(--hue), 100%, 47%);
-  --brand-light: hsl(calc(var(--hue) - 15), 23%, 90%);
-  --bg-light: hsl(calc(var(--hue) + 10), 14%, 97%);
+  --brand-light: hsl(calc(var(--hue) - 15), 23%, 87%);
+  --bg-light: hsl(calc(var(--hue) + 177), 97%, 98%);
   --brand-dark: hsl(var(--hue), 100%, 40%);
   --brand-beige: hsl(34, 100%, 97%);
 
@@ -80,6 +80,27 @@ img {
   background-color: var(--brand-dark);
 }
 
+section {
+  padding-block: 10rem;
+}
+
+section header h4 {
+  font-size: 1.4rem; /* 14px */
+  color: var(--primary-color);
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+
+  margin-bottom: 1.6rem;
+}
+
+section header h2 {
+  line-height: 3.9rem;
+  font-size: 3rem;
+  color: var(--headline);
+}
+
 section header h1 {
   font-size: 3.4rem; /* 34px */
   color: var(--headline);
@@ -88,7 +109,22 @@ section header h1 {
   margin-bottom: 2.4rem;
 }
 
+section .content p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: var(--paragraph);
+}
+
 /* ====================== CUSTOM COLORS ================== */
+
+#insurances .card circle {
+  fill: var(--primary-color);
+}
+
+#insurances .card path[stroke*='00856F'] {
+  stroke: var(--bg-light);
+}
 
 button.open-menu path[stroke*='00856F'],
 #contact li path {
@@ -224,6 +260,7 @@ body.menu-expanded button path {
 body.menu-expanded button.open-menu {
   visibility: hidden;
 }
+
 /* ====================== HOME ================== */
 
 #home {
@@ -293,4 +330,29 @@ body.menu-expanded button.open-menu {
 
   font-size: 1.6rem;
   line-height: 150%;
+}
+
+/* ====================== INSURANCES ================== */
+
+#insurances header h2 {
+  margin-bottom: 6rem;
+}
+
+#insurances .cards {
+  display: flex;
+  gap: 3.2rem;
+  flex-direction: column;
+}
+
+#insurances .card {
+  padding: 2.4rem;
+  text-align: left;
+  background: #ffffff;
+
+  border: 1px solid var(--brand-light);
+  border-radius: 0.6rem;
+}
+
+#insurances .card h3 {
+  margin-block: 1.6rem;
 }
