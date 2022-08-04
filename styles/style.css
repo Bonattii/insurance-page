@@ -643,11 +643,12 @@ footer p {
   /* ====================== HOME ================== */
 
   #home::before {
-    height: calc(85% - var(--nav-height));
+    height: calc(95% - var(--nav-height));
   }
 
   #home {
     padding-top: var(--nav-height);
+    margin-top: var(--nav-height);
   }
 
   #home .wrapper {
@@ -751,5 +752,26 @@ footer p {
 
   #about .content p {
     margin-bottom: 0;
+  }
+
+  /* ====================== CONTACT ================== */
+
+  #contact .wrapper {
+    grid-template-columns: 1fr 57.5rem;
+    grid-template-areas: 'A B';
+  }
+
+  #contact h2 {
+    width: 40.4rem;
+  }
+
+  #contact .col-a {
+    align-self: center;
+  }
+
+  /* ====================== FOOTER ================== */
+
+  footer p {
+    margin-bottom: 3.5rem;
   }
 }
