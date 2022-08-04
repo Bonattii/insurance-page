@@ -714,4 +714,22 @@ footer p {
     width: 30%;
     flex-grow: 1;
   }
+
+  /* ====================== PARTNERS ================== */
+
+  #partners h2 {
+    width: 60rem;
+    margin-inline: auto;
+  }
+
+  #partners .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4rem;
+  }
+
+  #partners .card {
+    width: 40%;
+    flex-grow: 1;
+  }
 }
