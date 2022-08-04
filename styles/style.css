@@ -27,6 +27,8 @@ body {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
 
+  overflow: auto;
+
   background-color: var(--bg-light);
 }
 
@@ -129,6 +131,10 @@ section .content p {
 button.open-menu path[stroke*='00856F'],
 #contact li path {
   stroke: var(--primary-color);
+}
+
+#contact .phone path[fill*='160042'] {
+  fill: var(--primary-color);
 }
 
 #backToTopButton circle {
