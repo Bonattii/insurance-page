@@ -307,6 +307,7 @@ body.menu-expanded button.open-menu {
 
 #home img {
   width: 40rem;
+  height: 100%;
   display: block;
   margin-inline: auto;
   object-position: 0 2rem;
@@ -588,6 +589,7 @@ footer p {
 
   nav#navigation .menu a.button:hover {
     border: none;
+    background-color: var(--primary-color);
     color: white;
   }
 
@@ -639,4 +641,61 @@ footer p {
   }
 
   /* ====================== HOME ================== */
+
+  #home::before {
+    height: calc(85% - var(--nav-height));
+  }
+
+  #home {
+    padding-top: var(--nav-height);
+  }
+
+  #home .wrapper {
+    grid-template-columns: 60.5rem 1fr;
+    grid-template-areas:
+      'A B'
+      'C C';
+  }
+
+  #home .col-a {
+    text-align: left;
+    align-self: center;
+  }
+
+  #home .col-b img {
+    align-self: flex-end;
+  }
+
+  #home h1 {
+    font-size: 4.5rem;
+  }
+
+  #home .content p {
+    font-size: 1.8rem;
+  }
+
+  #home .stats {
+    grid-area: C;
+    flex-direction: row;
+    padding: 6rem;
+    gap: 0;
+  }
+
+  #home .stats .stat + .stat {
+    border-left: 1px solid var(--primary-color);
+  }
+
+  #home .stats .stat {
+    flex: 1;
+  }
+
+  #home .button {
+    margin: 3.2rem;
+  }
+
+  #home img {
+    width: 42rem;
+  }
+
+   /* ====================== INSURANCES ================== */
 }
