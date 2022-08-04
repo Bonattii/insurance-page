@@ -732,4 +732,24 @@ footer p {
     width: 40%;
     flex-grow: 1;
   }
+
+  /* ====================== ABOUT ================== */
+
+  #about .wrapper {
+    grid-template-columns: 48rem 1fr;
+    grid-template-areas: 'B A';
+    gap: 6.7rem;
+  }
+
+  #about .col-a {
+    align-self: center;
+  }
+
+  #about .col-b {
+    align-self: center;
+  }
+
+  #about .content p {
+    margin-bottom: 0;
+  }
 }
