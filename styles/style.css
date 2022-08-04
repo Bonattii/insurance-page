@@ -697,5 +697,21 @@ footer p {
     width: 42rem;
   }
 
-   /* ====================== INSURANCES ================== */
+  /* ====================== INSURANCES ================== */
+
+  #insurances h2 {
+    width: 47rem;
+    margin-inline: auto;
+  }
+
+  #insurances .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4rem;
+  }
+
+  #insurances .card {
+    width: 30%;
+    flex-grow: 1;
+  }
 }
