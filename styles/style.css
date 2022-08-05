@@ -400,7 +400,7 @@ body.menu-expanded button.open-menu {
 
 #partners .card .col-a {
   align-self: center;
-  flex-shrink: 0;
+  flex-shrink: 1;
 }
 
 #partners .card .col-b {
